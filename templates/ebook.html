@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ebook &mdash; Sentiment Dynamics Visualizer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/icomoon/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-ui.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-datepicker.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/flaticon/font/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/aos.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+  
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+    <header class="site-navbar py-3" role="banner">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-11 col-xl-2">
+            <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0"><span class="text-primary">Sentiment</span>Dynamics<span class="text-primary">Visualizer</span></a></h1>
+          </div>
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+                <li><a href="http://localhost:5000">Home</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="site-section site-hero inner">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-10">
+            <span class="d-block mb-3 caption" data-aos="fade-up">Upload <i>.epub</i> file</span>
+            <form action="/ebook-upload" method="POST" enctype = "multipart/form-data">
+              <div class="row form-group">
+                <div class="col-md-12"> 
+                  <span class="d-block mb-3 caption" data-aos="fade-up"><input type="file" name="file" accept=".epub" id="subject" class="form-control"></span>
+                  <span class="d-block mb-3 caption" data-aos="fade-up"><input type="submit" value="Upload ebook" class="btn btn-primary py-2 px-4 text-white"></span>
+                </div>
+              </div> 
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6" data-aos="fade-up">
+            
+          </div>
+        </div>
+      </div>
+    </div> 
+
+  <script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery-migrate-3.0.1.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery-ui.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.stellar.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.countdown.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap-datepicker.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/aos.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    
+  </body>
+</html>
